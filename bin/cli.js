@@ -108,7 +108,6 @@ argv.usage('Usage: $0 <command> [options]')
               }
               // Use user feedback for... whatever!!
               console.log(data)
-
               require('./g')(data)
             })
         }
