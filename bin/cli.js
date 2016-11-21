@@ -10,12 +10,13 @@ var data = {}
 
 argv.usage('Usage: $0 <command> [options]')
   .command('init', 'init db.js with cli', function (yargs) {
-    return yargs.option('url', {
-      alias: 'u',
-      default: 'http://yargs.js.org/'
+    return yargs.option('config', {
+      alias: 'c',
+      default: 'config/'
     })
   },
   function (argv) {
+    console.log(argv)
     return inquirer.prompt([{
       type: 'list',
       name: 'type',
@@ -107,10 +108,10 @@ argv.usage('Usage: $0 <command> [options]')
               }
               // Use user feedback for... whatever!!
               console.log(data)
+
               require('./g')(data)
             })
         }
-        console.log(data)
 
         require('./g')(data)
       })
