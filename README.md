@@ -22,6 +22,17 @@ vmodel is a tool for something
 
 ## Usage 
 
+初始化，指定db.js
+
+```
+$ vmodel init
+```
+
+打开设计器
+
+```
+$ vmodel server
+```
 
 ## Contributing
 
