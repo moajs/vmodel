@@ -16,15 +16,6 @@
   },
   "author": "i5ting <i5ting@126.com>",
   "license": "MIT",
-  "devDependencies": {
-    "ava": "^0.15.2",
-    "co-exec": "^1.0",
-    "codecov": "^1.0.1",
-    "debug": "^2.3.3",
-    "ghooks": "^1.2.4",
-    "nyc": "^7.0.0",
-    "standard": "^7.1.2"
-  },
   "config": {
     "ghooks": {
       "pre-commit": "npm run standard"
@@ -35,5 +26,14 @@
     "lowdb": "^0.14.0",
     "tpl_apply": "^1.0.5",
     "yargs": "^6.4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "co-exec": "^1.0",
+    "codecov": "^1.0.1",
+    "debug": "^2.3.3",
+    "ghooks": "^1.2.4",
+    "nyc": "^7.0.0",
+    "standard": "^7.1.2"
   }
 }

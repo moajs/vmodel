@@ -6,10 +6,19 @@
 var argv = require('yargs')
 var inquirer = require('inquirer')
 
-var data = {}
+var data = {
+  type: 'Mongodb',
+  host: '127.0.0.1',
+  port: '27017',
+  database: 'mydb'
+}
 
 argv.usage('Usage: $0 <command> [options]')
   .command('init', 'init db.js with cli', function (yargs) {
+    yargs.option('yes', {
+      alias: 'u',
+      default: 'config/'
+    })
     return yargs.option('config', {
       alias: 'c',
       default: 'config/'
@@ -17,6 +26,10 @@ argv.usage('Usage: $0 <command> [options]')
   },
   function (argv) {
     console.log(argv)
+    if (argv.y) {
+      console.log(data)
+      return require('./g')(data)
+    }
     return inquirer.prompt([{
       type: 'list',
       name: 'type',
