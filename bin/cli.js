@@ -15,10 +15,22 @@ argv.usage('Usage: $0 <command> [options]')
     console.log(argv.url)
   })
   .command('server', 'admin with http-server ui', function (yargs) {
-    return yargs.option('url', {
+    yargs.option('ip', {
+      alias: 'i',
+      default: '127.0.0.1'
+    })
+
+    yargs.option('port', {
+      alias: 'p',
+      default: '8000'
+    })
+
+    yargs.option('url', {
       alias: 'u',
       default: 'http://yargs.js.org/'
     })
+
+    return yargs
   }, function (argv) {
     console.log(argv.url)
   })
