@@ -1,0 +1,27 @@
+{
+  "type": "{{type}}",
+  "development": {
+    "host": "{{host}}",
+    "port": "{{port}}",
+    "db": "{{database}}-development",
+    "user": "{{user}}",
+    "password": "{{password}}",
+    "is_debug": true
+   },
+   "test": {
+    "host": "{{host}}",
+    "port": "{{port}}",
+    "db": "{{database}}-test",
+    "user": "{{user}}",
+    "password": "{{password}}",
+    "is_debug": true
+   },
+   "production": {
+    "host": "{{host}}",
+    "port": "{{port}}",
+    "db": "{{database}}-production",
+    "user": "{{user}}",
+    "password": "{{password}}",
+    "is_debug": false
+   }
+}

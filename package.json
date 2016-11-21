@@ -8,7 +8,7 @@
   "scripts": {
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
     "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov",
-    "standard": "./node_modules/.bin/standard"
+    "standard": "./node_modules/.bin/standard --fix"
   },
   "repository": {
     "url": "git@github.com:i5ting/fm.git",
@@ -31,7 +31,9 @@
     }
   },
   "dependencies": {
+    "inquirer": "^1.2.3",
     "lowdb": "^0.14.0",
+    "tpl_apply": "^1.0.5",
     "yargs": "^6.4.0"
   }
 }
