@@ -34,6 +34,14 @@ $ vmodel init
 $ vmodel server
 ```
 
+meta.db.json
+
+table field:type
+
+- unique
+- index
+- default
+
 ## Contributing
 
 1. Fork it
