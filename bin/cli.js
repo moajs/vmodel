@@ -1,7 +1,9 @@
 #!/usr/bin/env node
+'use strict'
 
-// var filePath = __dirname
-// var currentPath = process.cwd()
+/**
+ * Module dependencies.
+ */
 
 var argv = require('yargs')
 
